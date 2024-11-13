@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Provinsi;
+use App\Models\provinsi;
 use Illuminate\Http\Request;
 
 class ProvinsiController extends Controller
 {
     public function index()
     {
-        $provinsi = Provinsi::All();
+        $provinsi = provinsi::All();
         return view('provinsi', compact('provinsi'));
     }
 

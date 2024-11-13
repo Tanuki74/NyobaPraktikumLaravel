@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Provinsi;
+use App\Models\provinsi;
 
 class dataProvinsi extends Seeder
 {
@@ -13,7 +13,7 @@ class dataProvinsi extends Seeder
      */
     public function run(): void
     {
-        Provinsi::create([
+        provinsi::create([
             'nama_provinsi' => 'Aceh',
             'kode_provinsi' => 11,
         ]);
